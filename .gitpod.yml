@@ -6,4 +6,6 @@ ports:
 tasks:
   - name: MySQL
     command: >
-        mysqld
+        mysql -e "create database chat_system";
+        mysql < src/chat_system.sql;
+        python3 welcome.py;
