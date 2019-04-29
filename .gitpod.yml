@@ -5,6 +5,8 @@ ports:
     onOpen: ignore
 tasks:
   - name: MySQL
+    init: mysqld
+  - name: Welcome
     command: >
         mysql -e "create database chat_system";
         mysql < src/chat_system.sql;
