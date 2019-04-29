@@ -1,0 +1,9 @@
+image:
+  file: Dockerfile
+ports:
+  - port: 3306
+    onOpen: ignore
+tasks:
+  - name: MySQL
+    command: >
+        mysqld
