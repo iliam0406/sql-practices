@@ -1,5 +1,7 @@
 # MySQL Playground
 
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io#https://github.com/breatheco-de/mysql-playground.git)
+
 Welcome GEEK!! 💻 + ㏈ = 🤓
 
 To browse the chat system database type "mysql" and type any of the following:
