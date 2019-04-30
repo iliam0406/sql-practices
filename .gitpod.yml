@@ -6,7 +6,6 @@ ports:
 tasks:
   - name: MySQL
     init: >
-        /etc/init.d/mysql start;
         mysql -e "create database chat_system";
         mysql < examples/chat_system.sql;
   - name: Welcome
