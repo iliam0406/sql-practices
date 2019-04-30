@@ -5,7 +5,10 @@ ports:
     onOpen: ignore
 tasks:
   - name: MySQL
-    init: nohup mysqld && mysql -e "create database chat_system" && mysql < examples/chat_system.sql
+    init: >
+        /etc/init.d/mysql start;
+        mysql -e "create database chat_system";
+        mysql < examples/chat_system.sql;
   - name: Welcome
     command: >
         python3 welcome.py;
